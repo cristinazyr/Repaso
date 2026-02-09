@@ -1,0 +1,22 @@
+.main{
+  margin: 20px;
+  display: flex;
+  gap: 20px;
+}
+.card{
+  width: 300px;
+  height: 350px;
+  border: solid 2px #333;
+  border-radius: 10px;
+  display: flex;
+  flex-direction:column ;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.card_img{
+  width:100% ;
+  background-color: rgb(33, 87, 94);
+  padding: 5px;
+  border-radius: 5px;
+}
