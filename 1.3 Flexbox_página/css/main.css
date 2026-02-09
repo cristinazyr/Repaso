@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 20px;
+    margin-inline: 10px;
+}
+.menulist{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    
+}
+.product{
+    min-width: 200px;
+    width: 25vw;
+    height: 300px;
+    border: solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 150px;
+}
+.main{
+    margin-inline: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

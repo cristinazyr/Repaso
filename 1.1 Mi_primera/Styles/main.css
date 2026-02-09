@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: brown;
+    background-color: yellow;
+}
+
+.title{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    margin: 100px 50px 100px 50px; /*top-right-botttom-left*/
+    padding: 100px;
+
+}
+.subtitle{
+    color: aquamarine;
+    margin-block: 100px;/*top-bottom*/
+    margin-inline: 50px;/*right-left*/
+    background-color: cadetblue;
+}
+.imagen{
+    height: 50px;
+}
+.header{
+    margin-bottom: 50px;
+}
+#first{
+    font-size: 32px;
+}
+.imagen_contact{
+ width: 200px;
+ height: 100px;    
+}
+.box{
+    box-sizing: border-box;
+    background-color: coral;
+    height: 400px;
+    width: 400px;
+    padding: 100px;
+    border: solid 10px black;
+}
+.another_box{
+    background-color: black;
+    height:100px ;
+    width: 100px;
+}
