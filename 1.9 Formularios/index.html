@@ -48,6 +48,45 @@
                 <label class="label" for="">Dirección:</label>
                 <input id="address" name="address" type="text" placeholder="Ej: Calle Leganitos" disabled>
             </div>
+            <label for="haircolor">Color del pelo</label>
+            <select name="haircolor" id="haircolor">
+                <option value="" selected disabled>Escoje tu color</option>
+                <option value="1">Negro</option>
+                <option value="2">Pelirojo</option>
+                <option value="3">Rubio</option>
+                <option value="4">Blanco</option>
+            </select>
+
+            <label for="haircolor">Color del pelo</label>
+            <input list="list-haircolors" name="haircolor" id="haircolor" type="text">
+            <datalist id="list-haircolors">
+                <option value="Negro"></option>
+                <option value="Pelirojo"></option>
+                <option value="Rubio"></option>
+                <option value="Blanco"></option>
+            </datalist>
+
+            <label class="col2" for="">Sabor favorito de helado:
+                <input type="radio" name="flavour" id="vanilla" value="vanilla">
+                <label for="vanilla">vanilla</label>
+
+                <input type="radio" name="flavour" id="choco" value="choco">
+                <label for="vanilla">choco</label>
+
+                <input type="radio" name="flavour" id="pistacho" value="pistacho">
+                <label for="vanilla">pistacho</label>
+            </label>
+
+            <label for="">Mascota:
+                <input type="checkbox" name="pet" id="dog" value="dog">
+                <label for="dog">Perrico</label>
+
+                <input type="checkbox" name="pet" id="cat" value="cat">
+                <label for="cat">Gatete</label>
+
+                <input type="checkbox" name="pet" id="dolphin" value="dolphin">
+                <label for="dolphin">Delfin</label>
+            </label>
         </fieldset>
 
         <input type="submit" value="Registrarme">

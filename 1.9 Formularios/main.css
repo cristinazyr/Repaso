@@ -20,3 +20,6 @@ body{
     width: 200px;
     margin-bottom: 0.5em;
 }
+.col2{
+    grid-column: span 2;
+}
