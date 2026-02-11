@@ -1,0 +1,22 @@
+:root{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    position: sticky;
+    top: 0;
+    background-color: antiquewhite;
+    color: black;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.main,.footer{
+    margin: 20px;
+}
+.label{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 0.5em;
+}
