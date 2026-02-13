@@ -1,7 +1,3 @@
-/*
-  Aquí van tus estilos o los @import './tus/ficheros'
-*/
-
-body {
-  background-color: lightblue;
-}
+@import url(./core/_reset.scss);
+@import url(./core/_variables.scss);
+@import url(./layout/_header.scss);

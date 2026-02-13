@@ -4,23 +4,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Adalab Web Starter Kit</title>
-
+  <title>Repaso final</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./scss/main.scss" />
   <link rel="icon" href="./images/favicon.png" />
 </head>
 
 <body>
-
-  <!-- Aquí van tus elementos HTML -->
-
-  <header>
-    <h1>Hola a todaaaaas</h1>
+  <header class="header">
+    <img class="header__logo" src="./images/logo.png" alt="spotify logo">
+    <img class="header__menu--mobile" src="./images/menu-icon.png" alt="Icono del menú hamurguesa" />
+    <nav class="header__menu--desktop">
+      <ul class="menu__list">
+        <li><a class="menu__link" href="">Premium</a></li>
+        <li><a class="menu__link" href="">Ayuda</a></li>
+        <li><a class="menu__link menu__link--separator" href="">Descargar</a></li>
+        <li><a class="menu__link" href="">Registrarse</a></li>
+        <li><a class="menu__link" href="">Iniciar sesión</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>Holis</main>
+  <main>
+    <section class="hero">
+      Prueba Premium gratis 3 meses
+      Escucha millones de canciones sin anuncios, a la carta y sin conexión.
+      Ver planes
+      Rigen términos y condiciones. Los tres meses gratis no están disponibles para usuarios que
+      ya hayan probado Premium.
+    </section>
+    <section class="reasons">
+      ¿Por qué pasarte a Premium?
+      <img class="benefit-img" src="./images/benefit-1.png" alt="Descarga música" />
+      Descarga música
+      Llévala siempre contigo
+      <img class="benefit-img" src="./images/benefit-2.png" alt="Sin anuncios" />
+      Sin anuncios
+      Disfruta de música sin interrupciones
+      <img class="benefit-img" src="./images/benefit-3.png" alt="Escucha lo que quieras" />
+      Escucha lo que quieras
+      Incluso en el móvil
+      <img class="benefit-img" src="./images/benefit-4.png" alt="Salta todas las canciones que quieras" />
+      Salta todas las canciones que quieras
+      Simplemente dale a siguiente
+    </section>
+  </main>
 
-  <script src="./js/main.js"></script>
+  <footer>
+    Legal
+    Cookies
+    Información sobre los anuncios
+    España <img class="copy-spain-flag" src="./images/es.svg" alt="Salta todas las canciones que quieras" />
+    &copy; 2020 Spotify AB
+  </footer>
 </body>
 
 </html>
