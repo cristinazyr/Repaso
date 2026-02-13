@@ -1,0 +1,24 @@
+@media(min-width: 768px){
+.reasons{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-areas: "title title";
+}
+.reasons__title{
+   /* grid-column: span 2;*/
+    grid-area: "title";
+}
+}
+
+@media(min-width:1200px){
+    .reasons{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas:"title title title title";
+    }
+  /*  .reasons__title{
+        grid-column: span 4;
+    }*/
+}
+.benefit-img{
+    height: 100px;
+}

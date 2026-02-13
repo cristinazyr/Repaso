@@ -1,0 +1,25 @@
+.hero{
+    background-color: #0691ff;
+    color: white;
+
+    @media(min-width: 768px){
+        background-image: url("../images/premium-dancer.png");
+        background-size: 600px;
+        background-position: top right;
+        background-repeat: no-repeat;;
+    }
+}
+.hero__title{
+    padding-top: 30px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.btn{
+    display: block;
+    font-size: 20px;
+    background-color: #4bb84a;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    border-radius: 1em;
+    text-transform: uppercase;
+}
