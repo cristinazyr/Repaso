@@ -1,3 +1,58 @@
 .school{
     background-color: #d9e4cc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:6px ;
+    padding-top: 18px;
+    
+}
+.school__text{
+    color: #626262;
+    font-size: 12px;
+    font-weight: bold;
+     
+}
+.school__title{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.school__images{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.school__image-text{
+    font-size: 14px;
+    font-weight: bold
+    
+}
+.school__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c933e;
+    border-radius: 22.5px;
+    width: 184px;
+    height: 48px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.school__btn-link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400; 
+}
+.btn__arrowup{
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border: solid 0 #979797;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
