@@ -1,3 +1,28 @@
 .footer{
     background-color: #4a4a4a;
+    color: white;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10px 1fr 1fr 50px;
+    justify-items: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 30px;
+
+
+}
+.footer__box-1{
+    margin-top: 30px;
+}
+.footer__box-3{
+padding-bottom: 45px;
+}
+
+.footer__small{
+    text-transform: none;
+}
+.fa{
+
+    color: #6c933e;
 }
