@@ -11,17 +11,31 @@
     color: #626262;
     font-size: 12px;
     font-weight: bold;
+    text-transform: uppercase;
      
 }
 .school__title{
     font-size: 20px;
     font-weight: bold;
+    text-transform: uppercase;
+
+    @media(min-width: 768px){
+        font-size: 28px;
+
+    }
     
 }
 .school__images{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+
+    @media(min-width:768px){
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 130px;
+    }
 }
 .school__image-text{
     font-size: 14px;
