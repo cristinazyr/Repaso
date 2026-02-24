@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font:16px 'Roboto', Verdana, sans-serif;
+}
+.header{
+    background-color: darkcyan;
+    color: white;
+    padding: 20px
+}
+.darkmode{
+    color: white;
+    background-color: #333333;
+}
+/*Estilos del ejemplo*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    position: relative;
+}
+.menu__button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem;
+cursor: pointer;
+}
+.menu__list{
+    display: none;
+    position: absolute;
+    top:2rem;
+    right: 0;
+    border: solid 2px #ffffff;
+    padding: 1em;
+    background-color: darkcyan;
+    list-style: none;
+    text-align: center;
+}
+.menu__list.visible{
+    display: block;
+
+}
