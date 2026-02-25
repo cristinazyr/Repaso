@@ -46,3 +46,22 @@ cursor: pointer;
     display: block;
 
 }
+.letter{
+    max-width: 600px;
+    margin-inline: auto;
+    margin-top: 3rem;
+    border: solid 3px #ffffff;
+    padding: 2em;
+}
+.form__line{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 0.5em;
+    font-size: 24px;
+    
+}
+.form__line input{
+    color: black;
+}
