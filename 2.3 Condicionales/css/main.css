@@ -26,9 +26,10 @@
 .darkmode {
   background-color: #333333;
 }
-.darkmode *{
+.darkmode * {
   color: white;
 }
+
 /* Menu */
 
 .header {
@@ -85,7 +86,7 @@
   font-size: 24px;
 }
 
-.darkmode input {
+.form__line input {
   color: #000000;
 }
 

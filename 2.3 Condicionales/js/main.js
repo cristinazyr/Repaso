@@ -8,3 +8,14 @@ ageInput.addEventListener("input", (ev) => {
     ageResult.innerHTML = "Es menor de edad";
   }
 });
+
+/*menu*/
+const menuBtn = document.querySelector(".js__menuBtn");
+const menuList = document.querySelector(".js__menuList");
+menuBtn.addEventListener("click", (ev) => {
+  if (menuList.classList.contains("visible")) {
+    menuList.classList.remove("visible");
+  } else {
+    menuList.classList.add("visible");
+  }
+});
