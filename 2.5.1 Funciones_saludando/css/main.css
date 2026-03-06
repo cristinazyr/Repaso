@@ -1,0 +1,72 @@
+/* Hoja de estilos de reset mínima */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fuente general */
+
+:root {
+  font: 16px 'Roboto', Verdana, sans-serif;
+}
+
+.header {
+  background-color: darkcyan;
+  color: white;
+
+  padding: 20px;
+}
+
+.header + .main {
+  margin: 2rem 1rem;
+}
+
+.darkmode {
+  background-color: #333333;
+}
+.darkmode * {
+  color: white;
+}
+.darkmode input {
+  color: black;
+}
+
+/* ESTILOS DEL EJERCICIO */
+
+.form__line {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 0.5em;
+
+  font-size: 24px;
+}
+
+.form__line input {
+  color: #000000;
+}
+
+.form__title {
+  font-size: 24px;
+  text-decoration: underline;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.form__result {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.important {
+  text-decoration: underline;
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
