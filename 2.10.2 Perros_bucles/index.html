@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 Lección 10</title>
+
+    <script src="https://kit.fontawesome.com/66349fc88a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://beta.adalab.es/resources/stylesheets/all.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="darkmode">
+    <header class="header">
+        <h1 class="header__title">2.10 Perros y arrays</h1>
+    </header>
+
+    <main class="main">
+        <p class="mb-1">¿Cuál es la raza de mi perro preferido? <span class="js__favouriteBreedSpan"></span></p>
+        <ul class="js__dogsUl cards">
+        </ul>
+
+        <form>
+            <legend>Datos para añadir un perrete:</legend>
+            <div class="col2 mt-1">
+                <label for="name">
+                    Nombre:
+                </label>
+                <input class="js__name" type="text" id="name" placeholder="P.ej: Lassie">
+            </div>
+            <div class="col2 mt-1">
+                <label for="image">
+                    Imagen:
+                </label>
+                <input class="js__image" type="text" id="image" placeholder="P.ej: https://google.com/images/...">
+            </div>
+            <div class="col2 mt-1">
+                <label for="description">
+                    Descripción:
+                </label>
+                <input class="js__desc" type="text" id="description" placeholder="P.ej: Un perrico muy bonito">
+            </div>
+            <div class="col2 mt-1">
+                <label for="breed">
+                    Raza:
+                </label>
+                <input class="js__breed" type="text" id="breed" placeholder="P.ej: Mezcla">
+            </div>
+            <input class="js__btn" type="button" value="Añadir">
+        </form>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
