@@ -62,14 +62,14 @@ function generateOneTask(taskObj) {
     return html;
   }
 }
-function renderAllTasks() {
+function renderAllTasks(tasksList) {
   let html = "";
-  for (const oneTask of tasks) {
+  for (const oneTask of tasksList) {
     html += generateOneTask(oneTask);
   }
   tasksUl.innerHTML = html;
 }
-renderAllTasks();
+
 /* const oneTask = {
   id: 569,
   name: "Sacar punta a los lápices",
@@ -78,3 +78,9 @@ renderAllTasks();
 const html = generateOneTask(oneTask);
 console.log(html);
  */
+function handleSearch(ev) {
+  const searchWord = searchInput.value;
+  const filteredTasks = tasks.filter((task) => task.name.includes(searchWord));
+  renderAllTasks(filteredTasks);
+}
+searchInput.addEventListener("input", handleSearch);
