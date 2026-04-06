@@ -1,0 +1,17 @@
+/*
+  Aquí van tus estilos o los @import './tus/ficheros'
+*/
+
+@import 'core/variables';
+@import 'core/reset';
+@import 'core/darkmode';
+@import 'components/cards';
+
+.listings {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.favourite {
+  background-color: $orange;
+}
