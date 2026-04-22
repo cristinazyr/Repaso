@@ -57,18 +57,21 @@ function handdleClickCard(ev) {
   );
   if (clickedFavouriteIndex === -1) {
     favourites.push(clickedPaletteObj);
-  }
-  console.log(clickedPaletteObj);
 
-  renderFavourites();
-  /*  const clickedPaletteObj = data.find(
+    renderFavourites();
+  } else {
+    // quitar el array de favourites
+    favourites.splice(clickedFavouriteIndex, 1);
+    renderFavourites();
+    /*  const clickedPaletteObj = data.find(
     (eachPaletteObj) => eachPaletteObj.id === clickedPaletteId,
   );
   const html = createLiforStarShip(clickedPaletteObj);
   favouritesUl.innerHTML += html;
   ev.currentTarget.classList.toggle("favourite"); */
+  }
+  ev.currentTarget.classList.toggle("favourite");
 }
-
 //EVENTOS
 
 //CÓDIGOS CUANDO CARGA LA PÁGINA
