@@ -3,6 +3,8 @@
 //QUERY SELECTOR
 const palettesUl = document.querySelector(".js__paletesUl");
 const favouritesUl = document.querySelector(".js__favouritesUl");
+const searchButton = document.querySelector(".js__searchButton");
+const paletteInput = document.querySelector(".js__paletteInput");
 //DATOS
 let data = [];
 let favourites = [];
@@ -22,13 +24,13 @@ ${colorsHTML}
   return html;
 }
 
-function renderStarShips() {
+function renderStarShips(vari) {
   let html = "";
 
   /* for (let i = 0; i < data.length; i++) {
   html += createLiforStarShip(data[i]);
 } */
-  for (const oneObject of data) {
+  for (const oneObject of vari) {
     html += createLiforStarShip(oneObject);
   }
   palettesUl.innerHTML = html;
@@ -57,11 +59,13 @@ function handdleClickCard(ev) {
   );
   if (clickedFavouriteIndex === -1) {
     favourites.push(clickedPaletteObj);
+    localStorage.setItem("favs", JSON.stringify(favourites));
 
     renderFavourites();
   } else {
     // quitar el array de favourites
     favourites.splice(clickedFavouriteIndex, 1);
+    localStorage.setItem("favs", JSON.stringify(favourites));
     renderFavourites();
     /*  const clickedPaletteObj = data.find(
     (eachPaletteObj) => eachPaletteObj.id === clickedPaletteId,
@@ -72,7 +76,30 @@ function handdleClickCard(ev) {
   }
   ev.currentTarget.classList.toggle("favourite");
 }
+
+function handleClickSearch(ev) {
+  ev.preventDefault();
+
+  const searchedPalette = paletteInput.value;
+  console.log(searchedPalette);
+
+  const filteredData = data.filter((eachPaletteObj) =>
+    eachPaletteObj.name.toLowerCase().includes(searchedPalette.toLowerCase),
+  );
+  renderStarShips(filteredData);
+  /*
+  fetch(`https://swapi.dev/api/people/?search=${searchedPalette}`)
+    .then(response => response.json())
+    .then(dataFromOtherFetch => {
+      data = dataFromOtherFetch.palettes;
+
+      renderStarships();
+    })
+  */
+}
+
 //EVENTOS
+searchButton.addEventListener("click", handleClickSearch);
 
 //CÓDIGOS CUANDO CARGA LA PÁGINA
 
@@ -83,5 +110,13 @@ fetch(
   .then((dataFromFetch) => {
     console.log(dataFromFetch.palettes);
     data = dataFromFetch.palettes;
-    renderStarShips();
+    renderStarShips(data);
   });
+
+const favsFromLS = JSON.parse(localStorage.getItem("favs"));
+
+if (favsFromLS !== null) {
+  favourites = favsFromLS;
+
+  renderFavourites();
+}
